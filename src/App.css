@@ -13,4 +13,46 @@ body {
   font-family: 'Josefin Sans', sans-serif;
 }
 
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* media query start */
+
+/* very small screens  */
+@media (min-width: 400px) {
+  .container {
+    width: 500px;
+  }
+}
+
+/* small screens*/
+@media (min-width: 768px) {
+  .container {
+    width: 740px;
+  }
+}
+
+/* medium screens  */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+/* large screens  */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+/*media query end*/
+ul {
+  list-style: none;
+}
+
 /* global rules end*/
