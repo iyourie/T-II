@@ -55,11 +55,14 @@ body {
 }
 
 /*media query end*/
+ul {
+  list-style: none;
+}
 
 /* global rules end*/
 header {
   padding: 20px;
-  background-color: transparent;
+  background-color: white;
 }
 
 header .container {
