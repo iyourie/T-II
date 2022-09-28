@@ -4,7 +4,7 @@ import image from '../img/favicon.ico'
 function Header() {
     const [id, setId] = useState('')
     return (
-        <header>
+        <header id='header'>
             <div className="container">
                 <img src={image} alt="" />
                 <ul>

@@ -61,12 +61,31 @@ ul {
 
 /* global rules end*/
 header {
-  padding: 20px;
+  padding: 10px;
   background-color: white;
+  box-shadow: 1px 1px 10px silver;
 }
 
 header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+}
+
+header .container img {
+  width: 40px;
+}
+
+header .container ul {
+  display: flex;
+}
+
+header .container ul li a {
+  color: black;
+  text-decoration: none;
+  padding: 0 30px;
+}
+header .container ul li a:hover{
+  color: var(--main-color);
 }
