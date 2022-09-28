@@ -1,4 +1,8 @@
 /* global rules start*/
+:root {
+  --main-color: #19c8fa;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -11,6 +15,9 @@ html {
 
 body {
   font-family: 'Josefin Sans', sans-serif;
+  background: url('/src/img/landing.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .container {
@@ -56,3 +63,40 @@ ul {
 }
 
 /* global rules end*/
+header {
+  padding: 20px;
+  background-color: transparent;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid;
+  padding: 20px;
+  text-transform: capitalize;
+  color: white;
+}
+
+header .container img {
+  width: 40px;
+}
+
+header .container ul {
+  display: flex;
+}
+
+header .container ul li {
+  margin-left: 10px;
+  cursor: pointer;
+  color: white;
+}
+
+header .container ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+header .container ul li :hover {
+  color: var(--main-color);
+}
