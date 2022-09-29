@@ -5,7 +5,7 @@ function Landing() {
         <div className="landing">
             <div className="container">
                 <div className="text">
-                    <h1>Welcome to Iyourie World</h1>
+                    <h1>Welcome to iyourie World</h1>
                     <p>Here Iam gonna share everything about my life. Books Iam reading, Games Iam Playing, Stories and Events</p>
                 </div>
                 <div className="image">

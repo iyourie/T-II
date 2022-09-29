@@ -8,7 +8,7 @@ function App() {
     <>
       <Header />
       <Menu />
-      {/* < Landing /> */}
+      < Landing />
     </>
   )
 }

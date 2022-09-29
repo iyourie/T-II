@@ -120,16 +120,17 @@ header .container ul li a:hover {
 
 /* menu start  */
 .menu {
-  justify-content: space-around;
+  grid-template-columns: repeat(3, auto);
+  font-weight: bold;
+  text-transform: capitalize;
   background-color: #fff;
   border-bottom: 4px solid var(--main-color);
-  padding: 30px;
   margin: 10px 40px 0 40px;
   display: none;
 }
 
 .active {
-  display: flex;
+  display: grid;
 }
 
 .menu .links {
@@ -166,8 +167,46 @@ header .container ul li a:hover {
   font-size: 18px;
 }
 
-@media (max-width: 991px) {
-  
+@media (max-width: 1250px) {
+  .menu {
+    width: 515px;
+    margin: auto;
+    margin-top: 10px;
+    justify-content: center;
+  }
+
+  .menu img {
+    display: none;
+  }
+
+  .menu .links {
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .menu {
+    grid-template-columns: 1fr;
+    width: 300px;
+    justify-content: center;
+  }
+
+  .menu .links span {
+    width: 300px;
+  }
 }
 
 /* menu end*/
+
+/* Landing start */
+.landing {
+
+}
+.landing .container {
+  display: flex;
+  justify-content: space-between;
+}
+.landing .container img {
+  width: 600px;
+}
+/* Landing end */

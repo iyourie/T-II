@@ -2,7 +2,7 @@ import { useState } from 'react'
 import image from '../img/favicon.ico'
 
 function Header() {
-//display or hide other links
+    //display or hide other links
     function otherLinks(e) {
         e.preventDefault()
         document.querySelector('.menu').classList.toggle('active')
