@@ -1,6 +1,6 @@
 /* global rules start*/
 :root {
-  --main-color: #19c8fa;
+  --main-color: #2196f3;
 }
 
 * {
@@ -60,6 +60,8 @@ ul {
 }
 
 /* global rules end*/
+
+/* header start  */
 header {
   padding: 10px;
   background-color: white;
@@ -84,8 +86,78 @@ header .container ul {
 header .container ul li a {
   color: black;
   text-decoration: none;
-  padding: 0 30px;
+  margin: 0 10px;
 }
-header .container ul li a:hover{
+
+header .container ul li a:hover {
   color: var(--main-color);
 }
+
+@media (max-width: 767px) {
+  header .container {
+    flex-direction: column;
+  }
+  header .container ul li a {
+    font-size: 14px;
+  }
+}
+@media (max-width: 500px) {
+  header .container ul li a {
+    margin: 0 7px;
+  }
+}
+@media (max-width: 400px) {
+  header .container ul li a {
+    font-size: 13px;
+  }
+}
+/* header end*/
+
+
+/* menu start  */
+.menu {
+  justify-content: space-around;
+  background-color: #fff;
+  border-bottom: 4px solid var(--main-color);
+  padding: 30px;
+  margin: 10px 40px 0 40px;
+  display: none;
+}
+.active{
+  display: flex;
+}
+.menu .links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.menu .links span {
+  padding: 15px;
+  border-bottom: solid 1px #ddd;
+  color: var(--main-color);
+  cursor: pointer;
+  transition: .2s;
+  -webkit-transition: .2s;
+  -moz-transition: .2s;
+  -ms-transition: .2s;
+  -o-transition: .2s;
+  width: 250px;
+}
+
+.menu .links span:hover {
+  background-color: rgb(247, 247, 247);
+}
+
+.menu .links span i {
+  font-size: 18px;
+}
+
+.menu .links span a {
+  margin-left: 10px;
+  color: var(--main-color);
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* menu end*/
